@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular expression</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/character.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1 class="col-sm-12 text-success text-center">REGULAR EXPRESSION</h1>
+		</div>
+		<div class="row mt-3">
+			<button type="button" class="btn btn-info" onclick="rowValidate()">Validate</button>
+			<button type="button" class="btn btn-secondary ml-2" onclick="rowSearch()">Search</button>
+			<button type="button" class="btn btn-success ml-2" onclick="rowCharacter()">Character</button>
+		</div>
+		
+		<div class="row border mt-3 formValidate" id="validate">
+			<div class="col-sm-8 p-3"> 
+				<form action="" class="">
+					<div class="text-success text-center" id = "messageValidate">
+				    </div>
+				  	<div class="form-group">
+				    	<label for="email">Email</label>
+				    	<input type="text" class="form-control" placeholder="Enter email" id="email">
+				    	<div class="text-danger" id="messEmail"></div>
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="pwd">Username</label>
+				    	<input type="text" class="form-control" placeholder="Enter username" id="username">
+				    	<div class="text-danger" id="messUsername"></div>
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="phone">Phone</label>
+				    	<input type="text" class="form-control" placeholder="Enter phone number" id="phone">
+				    	<div class="text-danger" id="messPhone"></div>
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="name">FullName</label>
+				    	<input type="text" class="form-control" placeholder="Enter fullname" id="name">
+				    	<div class="text-danger" id="messName"></div>
+				  	</div>
+				  		<button type="button" class="btn btn-primary" onclick="submitValidate()">Submit</button>
+				</form>
+			</div>
+			<div class="col-sm-4">
+				<button type="button" class="btn btn-danger" onclick="closeValidate()">Close</button>
+			</div>
+		</div>
+
+		<div class="row border mt-3 formSearch" id="formSearch">
+			<div class="col-sm-12 p-3 d-flex"> 
+				<form action="" class="col-sm-6">
+				  	<div class="form-group">
+				    	<label for="search">Search</label>
+				    	<input type="text" class="form-control" placeholder="Search..." id="search">
+				  	</div>
+				  	<button type="button" class="btn btn-primary" onclick="searchForm()">Search</button>
+				</form>
+				<div class="col-sm-6">
+					<div id="textarea">
+						Một Interface trong Java là một bản thiết kế của một lớp. Nó chỉ có các phương thức trừu tượng. Interface là một kỹ thuật để thu được tính trừu tượng hoàn toàn và đa kế thừa trong Java. Interface trong Java cũng biễu diễn mối quan hệ IS-A. Nó không thể được khởi tạo giống như lớp trừu tượng.
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<button type="button" class="btn btn-danger" onclick="closeFormSearch()">Close</button>
+			</div>
+		</div>
+
+		<div class="row border mt-3 formCharacter" id="formCharacter">
+			<div class="col-sm-12 p-3 d-flex"> 
+				<!-- <form action="" class="col-sm-6">
+				  	<div class="form-group">
+				    	<label for="search">Search</label>
+				    	<input type="text" class="form-control" placeholder="Search..." id="char">
+				  	</div>
+				  	<button type="button" class="btn btn-primary" onclick="searchCharacter()">Search</button>
+				</form> -->
+				<div class="col-sm-6">
+					<div id="chartext">
+						Một Interface trong Java là một bản thiết kế của một lớp. Nó chỉ có các phương thức trừu tượng. Interface là một kỹ thuật để thu được tính trừu tượng hoàn toàn và đa kế thừa trong Java. Interface trong Java cũng biễu diễn mối quan hệ IS-A. Nó không thể được khởi tạo giống như lớp trừu tượng.
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<button type="button" class="btn btn-danger" onclick="closeCharacter()">Close</button>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

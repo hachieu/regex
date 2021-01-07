@@ -1,0 +1,11 @@
+.formValidate, .formSearch, .formCharacter{
+	display: none;
+}
+
+.text, .char{
+	background-color: red;
+}
+
+.messageBox{
+	display: none;
+}
